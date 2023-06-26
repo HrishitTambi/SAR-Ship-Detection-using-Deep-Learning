@@ -24,7 +24,8 @@ python download_sar_image.py output_tif_filename intersecting_polygon_coordinate
 python download_sar_image.py new_img.tif "[[112.65398084, -7.17831176], [112.68703848, -7.14747203], [112.75027304, -7.21506447], [112.71688043, -7.24622707], [112.65398084, -7.17831176]]"
 ```
 3) Convert the CRS of the .tif image to EPSG:4326 (Can be performed in QGIS).
-4) Run: 
+4) Download model weights here (https://drive.google.com/file/d/1f4hJH9YBeTlNkbWUrbCP-C8ELh0eWJtT/view) and save the model.bin file to the SAR.py directory.
+5) Run: 
 ```shell
 python SAR.py input_tif_name output_geojson_filename prediction_confidence_threshold 
 ```
